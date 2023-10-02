@@ -1,0 +1,510 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  gap: 5px;
+}
+.hero h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 120px;
+}
+.hero h1, .hero h5, .hero p {
+  color: white;
+  text-align: center;
+}
+.hero h1 span, .hero h5 span, .hero p span {
+  color: #FFB6D9;
+}
+.hero button:hover {
+  background-color: #000000;
+  color: #FFB6D9;
+}
+.hero button {
+  background-color: #FFB6D9;
+  color: black;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6)), url(../img/bg1.jpg);
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  animation: berubah 30s infinite;
+}
+
+.navigasi {
+  background: #FF9B50;
+}
+.navigasi .box-navigasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.navigasi .box-navigasi .box:nth-child(1) h1 {
+  font-family: "sacramento";
+  font-size: 40px;
+  color: white;
+  display: inline-block;
+}
+.navigasi .box-navigasi .box:nth-child(2) ul {
+  display: flex;
+}
+.navigasi .box-navigasi .box:nth-child(2) ul li {
+  list-style: none;
+  padding: 0px 0.7em;
+}
+.navigasi .box-navigasi .box:nth-child(2) ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+.navigasi .box-navigasi .box:nth-child(2) ul li a:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  transition: 1s ease-in;
+  background-color: white;
+}
+.navigasi .box-navigasi .box:nth-child(2) ul li a:hover:after {
+  width: 100%;
+}
+.navigasi .box-navigasi .burger {
+  display: none;
+  flex-direction: column;
+  height: 30px;
+  gap: 5px;
+}
+.navigasi .box-navigasi .burger span {
+  width: 30px;
+  height: 4px;
+  transition: 1s ease-in;
+  background-color: white;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(226, 94, 62), rgb(198, 61, 47));
+  color: white;
+}
+.home .box-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.home .box-home .box:nth-child(1) {
+  text-align: center;
+}
+.home .box-home .box:nth-child(1) h2 {
+  font-family: "Sacramento", cursive;
+  font-weight: normal;
+  font-size: 80px;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.409);
+}
+.home .box-home .box:nth-child(1) h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.home .couple {
+  margin-top: 100px;
+}
+.home .couple h3 {
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+.home .couple img {
+  width: 100%;
+}
+.home .couple .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding-top: 5px;
+  right: 48%;
+  transform: translateY(60px);
+}
+.home .couple .heart i {
+  margin: auto;
+  font-size: 23px;
+  color: red;
+}
+
+.info {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.info .tanggal h2 {
+  font-size: 80px;
+  font-weight: normal;
+  color: #C63D2F;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.409);
+  font-family: "sacramento", Arial, Helvetica, sans-serif;
+}
+.info .card {
+  width: 100%;
+  margin: 20px;
+  background: linear-gradient(rgba(226, 95, 62, 0.8), rgba(198, 61, 47, 0.7));
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.788);
+  color: white;
+}
+.info .card h3 {
+  font-family: "sacramento";
+  font-size: 40px;
+}
+.info .card img {
+  width: 200px;
+  margin: auto;
+}
+.info .card p {
+  font-size: 15px;
+  font-weight: bold;
+}
+.info .peta {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 10px solid #FF9B50;
+  border-radius: 20px;
+}
+.info .map {
+  width: 100%;
+  height: 200px;
+  border-radius: 9px;
+}
+
+.galeri {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  background-image: linear-gradient(#E25E3E, #FF9B50);
+}
+.galeri h2 {
+  font-family: "sacramento", arial;
+  font-size: 80px;
+  text-shadow: 0 10px 10px rgba(255, 255, 255, 0.822);
+}
+.galeri .box-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0px;
+}
+.galeri .box-img img {
+  width: 250px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.message {
+  padding-top: 20px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.message h2 {
+  font-family: "sacramento", arial;
+  font-size: 80px;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.409);
+}
+.message .komentar {
+  width: 90%;
+  border-radius: 20px;
+  padding: 20px;
+  background-image: linear-gradient(rgba(226, 95, 62, 0.6), rgba(255, 156, 80, 0.5));
+}
+.message .komentar .btn {
+  color: white;
+  background-color: rgb(226, 95, 62);
+}
+.message .komentar .isi {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: auto;
+  height: 200px;
+  /* CSS untuk membuat speech bubble */
+}
+.message .komentar .isi .speech-bubble {
+  position: relative;
+  background-color: #ffffff; /* Warna latar belakang */
+  color: black; /* Warna teks */
+  padding: 10px 20px; /* Padding dalam balon bicara */
+  border-radius: 10px; /* Sudut bulatan */
+  max-width: 80%; /* Lebar maksimum balon bicara */
+  margin: 20px;
+}
+.message .komentar .isi .speech-bubble::before {
+  content: "";
+  position: absolute;
+  left: -20px; /* Mengatur posisi panah di samping kiri */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #ffffff transparent transparent; /* Warna pana*/
+}
+
+.penutup {
+  height: 70vh;
+  padding-top: 100px;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.penutup .ucapan p {
+  font-size: 18px;
+}
+.penutup .ucapan h2 {
+  font-family: "sacramento";
+  font-size: 80px;
+  line-height: 150px;
+}
+
+footer {
+  background-color: rgba(254, 254, 254, 0.3215686275);
+  padding-top: 40px;
+}
+footer .foter {
+  border-top: 1px solid black;
+}
+footer .foter img {
+  width: 140px;
+  height: 100px;
+}
+footer .foter ul {
+  display: flex;
+  padding: 0;
+}
+footer .foter ul li {
+  padding: 10px;
+  list-style: none;
+}
+footer .foter ul li a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+footer .foter ul li a:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  display: block;
+  transition: 1s ease-in;
+  background-color: rgb(0, 0, 0);
+}
+footer .foter ul li a:hover:after {
+  width: 100%;
+}
+
+@keyframes berubah {
+  0% {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6)), url(../img/bg1.jpg);
+  }
+  25% {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6)), url(../img/bg2.jpg);
+  }
+  50% {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6)), url(../img/bg3.jpg);
+  }
+}
+@media screen and (max-width: 990px) {
+  .home {
+    height: 100%;
+    padding-top: 20px;
+  }
+  .home .couple .heart {
+    display: none;
+  }
+  .galeri .box-img img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .navigasi .box-navigasi .box:nth-child(1) h1 {
+    font-size: 25px;
+  }
+  .home .box-home .box:nth-child(1) h2 {
+    font-size: 40px;
+  }
+  .home .box-home .box:nth-child(1) h3 {
+    font-size: 14px;
+  }
+  .home .box-home .box:nth-child(1) p {
+    font-size: 12px;
+  }
+  .info .tanggal h2 {
+    font-size: 60px;
+  }
+  .info .card {
+    width: 500px;
+  }
+  .galeri h2 {
+    font-size: 60px;
+  }
+  .message h2 {
+    font-size: 60px;
+  }
+  .penutup {
+    height: 100%;
+  }
+  .penutup h2 {
+    font-size: 40px;
+  }
+  footer {
+    justify-content: center;
+  }
+  footer .foter {
+    flex-direction: column;
+  }
+  footer .foter ul {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .navigasi .box-navigasi .menu-active {
+    opacity: 1;
+  }
+  .navigasi .box-navigasi .box:nth-child(1) h1 {
+    font-size: 30px;
+  }
+  .navigasi .box-navigasi .box:nth-child(2) {
+    opacity: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background-color: coral;
+    width: 180px;
+    border-radius: 20px;
+    transition: 1s ease-in;
+  }
+  .navigasi .box-navigasi .box:nth-child(2) ul {
+    flex-direction: column;
+  }
+  .navigasi .box-navigasi .box:nth-child(2) ul li {
+    padding: 10px 15px;
+  }
+  .navigasi .box-navigasi .box:nth-child(2) ul li a {
+    color: white;
+    display: inline-block;
+  }
+  .navigasi .box-navigasi .box:nth-child(2) ul li a::after {
+    content: "";
+    width: 0px;
+    height: 3px;
+    display: block;
+    background-color: white;
+    transition: 1s ease-in;
+  }
+  .navigasi .box-navigasi .box:nth-child(2) ul li a:hover {
+    width: 100%;
+  }
+  .navigasi .box-navigasi .burger {
+    display: flex;
+  }
+  .navigasi .box-navigasi .toggle span:nth-child(1) {
+    width: 25px;
+    transition: 1s ease-in;
+  }
+  .navigasi .box-navigasi .toggle span:nth-child(2) {
+    width: 15px;
+    transition: 1s ease-in;
+  }
+  .navigasi .box-navigasi .toggle span:nth-child(3) {
+    width: 10px;
+    transition: 1s ease-in;
+  }
+  .navigasi .box-navigasi .nav-menu.menu-active {
+    opacity: 1;
+    right: 50px;
+  }
+  .info .card, .info .peta {
+    width: 380px;
+  }
+  .galeri .box-img img {
+    width: 150px;
+  }
+  .penutup .ucapan h2 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .home {
+    height: 100%;
+  }
+  .info .card, .info .peta {
+    width: 80%;
+  }
+  .penutup .ucapan h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .home .couple h3 {
+    font-size: 35px;
+  }
+  .home .couple p {
+    font-size: 13px;
+  }
+  .galeri .box-img img {
+    width: 130px;
+  }
+  .penutup .ucapan p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .galeri .box-img img {
+    width: 100%;
+  }
+  footer .foter ul li {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 758px) {
+  .hero h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+  .hero h5 {
+    font-size: 18px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=main.css.map */
